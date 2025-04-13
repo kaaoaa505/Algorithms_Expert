@@ -15,7 +15,7 @@
 # current_change_created is just a single integer → O(1) space.
 
 
-def non_constructible_change(coins):
+def solve(coins):
     coins.sort()
     current_change_created = 0
 
@@ -27,9 +27,9 @@ def non_constructible_change(coins):
     return current_change_created + 1
 
 
-print(non_constructible_change([1, 2, 5]))  # ➞ 4
-print(non_constructible_change([1, 1, 1, 1, 1]))  # ➞ 6
-print(non_constructible_change([2]))  # ➞ 1
-print(non_constructible_change([1, 1, 2, 3, 5, 7, 22]))  # ➞ 20
-print(non_constructible_change([1, 1, 3]))  # ➞ 6
-print(non_constructible_change([1, 1, 4]))  # ➞ 3
+print(solve([1, 2, 5]))  # ➞ 4
+print(solve([1, 1, 1, 1, 1]))  # ➞ 6
+print(solve([2]))  # ➞ 1
+print(solve([1, 1, 2, 3, 5, 7, 22]))  # ➞ 20
+print(solve([1, 1, 3]))  # ➞ 6
+print(solve([1, 1, 4]))  # ➞ 3
